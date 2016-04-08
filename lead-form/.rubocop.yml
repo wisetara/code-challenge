@@ -1,0 +1,18 @@
+require: rubocop-rspec
+
+LineLength:
+  Max: 100
+Documentation:
+  Enabled: false
+
+RSpec/DescribeClass:
+  Exclude:
+    - 'spec/features/**/*.rb'
+
+AllCops:
+  TargetRubyVersion: 2.3
+  DisplayCopNames: true
+  DisplayStyleGuide: true
+  Exclude:
+    - 'db/**/*.rb'
+    - 'bin/**/*'

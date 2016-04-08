@@ -1,0 +1,15 @@
+<h2> Search For a Lead! </h2>
+
+<%= form_for @lead do |form| %>
+  <%= form.label('First Name') %>
+  <%= form.text_field(:first_name) %>
+  <%= form.label('Last Name') %>
+  <%= form.text_field(:last_name) %>
+  <%= form.submit %>
+<% end %>
+
+<h3>Search Results</h3>
+<% matches.each do |match| %>
+  <%= match.first_name %>
+  <%= match.last_name %>
+<% end %>
